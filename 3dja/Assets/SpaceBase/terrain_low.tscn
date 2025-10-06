@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d132py4coyj22"]
+
+[ext_resource type="PackedScene" uid="uid://dai2v1k5ojnu6" path="res://Assets/SpaceBase/terrain_low.fbx" id="1_1vxpt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n18hh"]
+size = Vector3(1.76807, 1, 1.74597)
+
+[node name="terrain_low" instance=ExtResource("1_1vxpt")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.197998, -0.267456, 0.372986)
+shape = SubResource("BoxShape3D_n18hh")
